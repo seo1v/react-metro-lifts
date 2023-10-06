@@ -1,0 +1,174 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+}
+
+.bg {
+  background-image: url('../../public/images/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--color-blue);
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding-top: 3rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: var(--font-500);
+  font-weight: var(--weight-700);
+  margin-top: 1rem;
+}
+
+.subtitle {
+  color: var(--color-gray);
+  font-size: var(--font-200);
+  margin-top: 0.25rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.point {
+  font-family: var(--font-point);
+  font-weight: var(--weight-500);
+}
+
+.legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.form label {
+  font-size: var(--font-100);
+  margin-bottom: 0.25rem;
+}
+
+.form input[type='submit'] {
+  cursor: pointer;
+  background-color: var(--color-blue);
+  margin-top: 2rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  font-size: var(--font-200);
+  font-weight: var(--weight-500);
+}
+
+.form input[type='submit']:hover {
+  filter: brightness(105%);
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  background-color: var(--color-silver);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content svg {
+  color: var(--color-gray);
+}
+
+.content input {
+  width: 100%;
+  padding: 0.65rem 0.25rem;
+  background-color: var(--color-silver);
+}
+
+.content input::placeholder {
+  color: var(--color-gray);
+  font-size: var(--font-50);
+}
+
+.error {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  color: var(--color-teal);
+  font-size: var(--font-50);
+}
+
+.error::before {
+  display: inline;
+  content: '⚠ ';
+}
+
+.switcher {
+  color: var(--color-gray);
+  font-size: var(--font-100);
+  margin-bottom: 1rem;
+}
+
+.switcher a {
+  color: var(--color-blue);
+  font-weight: var(--weight-500);
+  text-decoration: underline;
+}
+
+.switcher a:hover {
+  filter: brightness(105%);
+}
+
+@media (max-width: 992px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: var(--font-400);
+  }
+
+  .subtitle {
+    font-size: var(--font-100);
+  }
+}
