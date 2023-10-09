@@ -9,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: var(--color-blue);
+  background-color: var(--color-sky);
 }
 
 .section {
@@ -43,6 +43,11 @@ header {
   margin-top: 0.25rem;
   padding: 0 1rem;
   text-align: center;
+}
+
+.point {
+  font-family: var(--font-point);
+  font-weight: var(--weight-500);
 }
 
 .legend {

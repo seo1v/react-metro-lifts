@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { auth } from '../api/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -17,6 +17,11 @@ export default function SignIn() {
     handleSubmit,
     formState: { errors },
   } = useForm({ mode: 'onBlur' });
+  const user = auth.currentUser;
+
+  if (user) {
+    return <Navigate to='/' />;
+  }
 
   const onSubmit = async (data) => {
     setError('');
@@ -48,11 +53,12 @@ export default function SignIn() {
       <aside className={styles.bg}></aside>
       <section className={styles.section}>
         <header>
-          <Logo />
+          <Logo size='big' />
           <div className={styles.text}>
             <h1 className={styles.title}>좋은 하루입니다!</h1>
             <p className={styles.subtitle}>
-              당신이 향하는 곳 어디든, Wherever와 함께하세요
+              당신이 향하는 곳 어디든,&#x2004;
+              <span className={styles.point}>Wherever</span>와 함께하세요
             </p>
           </div>
         </header>
@@ -105,13 +111,13 @@ export default function SignIn() {
               <p className={styles.error}>{errors.password.message}</p>
             )}
           </div>
-          <input type='submit' value='Sign In' />
+          <input type='submit' value='로그인' />
           {error !== '' ? <p className={styles.error}>{error}</p> : null}
         </form>
         <footer>
           <p className={styles.switcher}>
             아직 계정이 없으신가요? &#x2004;
-            <Link to='/signup'>Sign up &rarr;</Link>
+            <Link to='/signup'>회원가입 &rarr;</Link>
           </p>
         </footer>
       </section>
