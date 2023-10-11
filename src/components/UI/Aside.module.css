@@ -1,0 +1,34 @@
+.aside {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.title {
+  color: var(--color-blue);
+  font-size: var(--font-500);
+  font-family: var(--font-point);
+  font-weight: var(--weight-700);
+}
+
+.subtitle {
+  color: var(--color-gray);
+  font-size: var(--font-100);
+  font-weight: var(--weight-700);
+}
+
+.aside img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .aside {
+    display: none;
+  }
+}
