@@ -1,0 +1,16 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../public/images/error-404.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.title {
+  font-size: var(--font-500);
+  font-weight: var(--weight-700);
+}
