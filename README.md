@@ -1,6 +1,6 @@
 # 🦽 교통약자를 위한 앱, 'Wherever' 프로젝트
 
-![thumbnail](https://github.com/cona-tus/react-metro-lifts/assets/90844424/eaad5841-d995-42ec-8116-ce5a5ec34826)
+![thumbnail](https://github.com/cona-tus/react-metro-lifts/assets/90844424/90f7dca2-1fda-4cfd-b135-89ff7645d993)
 
 <br/>
 
