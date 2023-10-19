@@ -1,6 +1,6 @@
 # 🦽 교통약자를 위한 앱, 'Wherever' 프로젝트
 
-![thumbnail](https://github.com/cona-tus/react-metro-lifts/assets/90844424/90f7dca2-1fda-4cfd-b135-89ff7645d993)
+![thumbnail](https://github.com/cona-tus/react-metro-lifts/assets/90844424/3dc57269-c056-473e-b887-0a60b5fe5dcd)
 
 <br/>
 
@@ -105,7 +105,7 @@ const router = createBrowserRouter([
 
 ### 4-1. Register Account
 
-![register](https://github.com/cona-tus/react-metro-lifts/assets/90844424/aba5759d-1181-47f5-bfc0-a1c00c068462)
+![register](https://github.com/cona-tus/react-metro-lifts/assets/90844424/a51fe969-3e36-40e3-8582-4e754fa96bfd)
 
 파이어 베이스의 Authentication 기능을 활용하여 사용자를 관리합니다. 사용자가 입력한 정보를 `createUserWithEmailAndPassword` 메서드에 전달하면, 해당 정보를 기반으로 사용자를 등록합니다. 또한 가입과 동시에 `updateProfile` 메서드를 사용하여 사용자의 기본 프로필을 설정합니다.
 
@@ -154,7 +154,7 @@ const onSubmit = async (data) => {
 
 ### 4-2. Sign In & Sign Out
 
-![login](https://github.com/cona-tus/react-metro-lifts/assets/90844424/b03e74c9-f1f7-4cc6-bf55-af091f5fd478)
+![login](https://github.com/cona-tus/react-metro-lifts/assets/90844424/275cc403-87c5-4fe6-8acb-142acc7cdecd)
 
 사용자는 자신의 이메일 주소와 비밀번호를 입력하여 로그인할 수 있습니다. 사용자가 입력한 정보를 `signInWithEmailAndPassword` 메서드로 전달합니다.
 
@@ -190,7 +190,7 @@ const onSubmit = async (data) => {
 
 <br/>
 
-![logout](https://github.com/cona-tus/react-metro-lifts/assets/90844424/68b572cc-87ec-45be-8730-9c2c27c25d9b)
+![logout](https://github.com/cona-tus/react-metro-lifts/assets/90844424/e58e3a21-b03c-4967-a0fb-232ce9c56cd9)
 
 `signOut`을 호출하여 사용자를 로그아웃시킬 수 있습니다.
 
@@ -321,7 +321,7 @@ useEffect 훅을 사용해 사용자가 입력한 검색어와 locations가 변�
 
 ### 4-4. Show Messages
 
-![feed](https://github.com/cona-tus/react-metro-lifts/assets/90844424/e0867a37-a878-49ab-9120-c90b1e25ed3d)
+![feed](https://github.com/cona-tus/react-metro-lifts/assets/90844424/46eab9e4-9b68-4b49-9b87-986c24e26374)
 
 Cloud Firestore로 실시간 업데이트를 구현할 수 있습니다. `onSnapshot` 메서드로 문서를 리슨하며 메시지 데이터를 가져오고, 해당 데이터가 업데이트될 때마다 State를 업데이트하여 렌더링 합니다.
 
@@ -667,7 +667,7 @@ export default function Profile() {
 
 ### 5-3. Display User guidance Message
 
-![guide](https://github.com/cona-tus/react-metro-lifts/assets/90844424/3a2430d3-c0f0-466b-98bc-5e79a21fb47c)
+![guide](https://github.com/cona-tus/react-metro-lifts/assets/90844424/3de4aacd-deab-43db-98cc-35066742a75c)
 
 입력한 값이 유효한지 사용자에게 안내 메시지를 보여줍니다. 사용자에게 즉각적인 피드백을 제공함으로써 사용자 경험을 향상시킬 수 있습니다.
 
@@ -676,7 +676,7 @@ export default function Profile() {
 
 ### 5-4. Responsive Web Design
 
-![responsive](https://github.com/cona-tus/react-metro-lifts/assets/90844424/92c29845-661b-4952-961f-071f8cee5dfa)
+![responsive](https://github.com/cona-tus/react-metro-lifts/assets/90844424/ac0b4df1-5e4e-4bcd-98db-e433eb37633c)
 
 웨어에버는 반응형 웹 사이트입니다. 다양한 디바이스와 화면 크기에 웹 사이트가 올바르게 표시됩니다. 이로써 사용자가 웹 사이트를 더 편리하게 이용할 수 있도록 합니다.
 
