@@ -45,6 +45,7 @@
 3. Home - 메인 페이지('/')
 4. Feed - 피드 페이지('/feed')
 5. Profile - 프로필 페이지('profile')
+6. NotFound - 404 페이지
 
 <br/>
 
