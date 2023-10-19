@@ -13,9 +13,7 @@
 
 ### 1-1. Project Description
 
-웨어에버 프로젝트는 교통약자를 대상으로 설계되었습니다. 서울교통공사의 API를 활용하여 사용자들에게 지하철 역마다 설치된 승강기의 위치 정보를 제공합니다.
-
-뿐만 아니라, 휠체어 이용자들이 접근 가능한 장소를 서로 공유하고 소통할 수 있도록 파이어 베이스를 이용한 소셜 미디어 기능을 구현했습니다.
+웨어에버 프로젝트는 교통약자를 대상으로 기획되었습니다. 서울교통공사의 API를 활용하여 사용자들에게 지하철 역마다 설치된 승강기의 위치 정보를 제공합니다. 뿐만 아니라, 휠체어 이용자들이 접근 가능한 장소를 서로 공유하고 소통할 수 있도록 파이어 베이스를 이용한 소셜 미디어 기능을 구현했습니다.
 
 모두가 자유롭고 안전한 이동권을 보장받길 바랍니다.
 
@@ -92,14 +90,14 @@ const router = createBrowserRouter([
 
 ## 4. Main Features
 
-1. 회원가입
-2. 로그인 및 로그아웃
-3. 서울교통공사 API를 이용한 승강기 정보 검색
-4. 파이어베이스를 이용한 피드 구현
-5. 메시지 생성
-6. 메시지 수정
-7. 메시지 삭제
-8. 프로필 이름 및 사진 변경
+1. [회원가입](#4-1-register-account)
+2. [로그인 및 로그아웃](#4-2-sign-in--sign-out)
+3. [서울교통공사 API를 이용한 승강기 정보 검색](#4-3-search-lifts-info)
+4. [파이어베이스를 이용한 피드 구현](#4-4-show-messages)
+5. [메시지 생성](#4-5-create-message)
+6. [메시지 수정](#4-6-edit-message)
+7. [메시지 삭제](#4-7-delete-message)
+8. [프로필 이름 및 사진 변경](#4-8-update-profile)
 
 <br/>
 
@@ -107,7 +105,7 @@ const router = createBrowserRouter([
 
 ![register](https://github.com/cona-tus/react-metro-lifts/assets/90844424/a51fe969-3e36-40e3-8582-4e754fa96bfd)
 
-파이어 베이스의 Authentication 기능을 활용하여 사용자를 관리합니다. 사용자가 입력한 정보를 `createUserWithEmailAndPassword` 메서드에 전달하면, 해당 정보를 기반으로 사용자를 등록합니다. 또한 가입과 동시에 `updateProfile` 메서드를 사용하여 사용자의 기본 프로필을 설정합니다.
+회원가입을 구현하기 위해 파이어 베이스의 Authentication 기능을 활용합니다. 사용자가 입력한 정보를 `createUserWithEmailAndPassword` 메서드에 전달하면, 해당 정보를 기반으로 사용자를 등록합니다. 또한 가입과 동시에 `updateProfile` 메서드를 사용하여 사용자의 기본 프로필을 설정합니다.
 
 ```jsx
 import { getAuth } from 'firebase/auth';
@@ -154,7 +152,7 @@ const onSubmit = async (data) => {
 
 ### 4-2. Sign In & Sign Out
 
-![login](https://github.com/cona-tus/react-metro-lifts/assets/90844424/275cc403-87c5-4fe6-8acb-142acc7cdecd)
+![login](https://github.com/cona-tus/react-metro-lifts/assets/90844424/422d5533-52f8-4174-89f2-cd18a5f5ad90)
 
 사용자는 자신의 이메일 주소와 비밀번호를 입력하여 로그인할 수 있습니다. 사용자가 입력한 정보를 `signInWithEmailAndPassword` 메서드로 전달합니다.
 
@@ -323,7 +321,7 @@ useEffect 훅을 사용해 사용자가 입력한 검색어와 locations가 변�
 
 ![feed](https://github.com/cona-tus/react-metro-lifts/assets/90844424/46eab9e4-9b68-4b49-9b87-986c24e26374)
 
-Cloud Firestore로 실시간 업데이트를 구현할 수 있습니다. `onSnapshot` 메서드로 문서를 리슨하며 메시지 데이터를 가져오고, 해당 데이터가 업데이트될 때마다 State를 업데이트하여 렌더링 합니다.
+Cloud Firestore로 실시간 업데이트를 구현할 수 있습니다. `onSnapshot` 메서드로 문서를 리슨하며 메시지 데이터를 가져오고, 해당 데이터가 변경될 때마다 messages 상태를 업데이트하여 렌더링 합니다.
 
 ```jsx
 import {
@@ -798,4 +796,7 @@ CSS를 활용하여([참고](https://tympanus.net/codrops/2015/09/15/styling-cus
 
 <br/>
 <br/>
+
+[맨위로 이동하기](#-교통약자를-위한-앱-wherever-프로젝트)
+
 <br/>
