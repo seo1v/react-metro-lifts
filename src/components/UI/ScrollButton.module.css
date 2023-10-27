@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 1;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--color-blue);
+  outline: none;
+  border: 0;
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: var(--font-500);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
