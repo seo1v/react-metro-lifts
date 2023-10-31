@@ -1,0 +1,33 @@
+.label {
+  color: var(--color-gray);
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--font-50);
+}
+
+.form-content {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-silver);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+
+.form-content input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  background-color: var(--color-silver);
+}
+
+.form-content input:focus {
+  border: 2px solid var(--color-focus);
+}
+
+.form-content svg {
+  color: var(--color-gray);
+  font-size: var(--font-300);
+  margin-right: 0.5rem;
+}
