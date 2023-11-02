@@ -1,0 +1,17 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url('../../public/images/main.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    align-items: center;
+  }
+}
