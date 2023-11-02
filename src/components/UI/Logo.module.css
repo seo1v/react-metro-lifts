@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--color-silver);
+}
+
+.container img.big {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.25rem;
+}
+
+.container img.medium {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+
+.container img.small {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.1rem;
+}
