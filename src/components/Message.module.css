@@ -1,0 +1,172 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 15px 0px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.25rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0.1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-size: var(--font-50);
+  font-weight: var(--weight-500);
+}
+
+.date {
+  color: var(--color-gray);
+  font-size: var(--font-50);
+}
+
+.show-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: var(--font-200);
+}
+
+.show-button:focus {
+  border: 2px solid var(--color-focus);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
+  border-radius: 0.25rem;
+  background-color: var(--color-white);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  z-index: 2;
+}
+
+.menu button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  background-color: transparent;
+  font-family: var(--font-basic);
+  font-size: var(--font-50);
+}
+
+.menu button:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu button:focus {
+  outline: 2px solid var(--color-focus);
+}
+
+.menu button:hover {
+  color: var(--color-gray);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.editor {
+  display: flex;
+  position: relative;
+}
+
+.textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: var(--font-100);
+  padding: 1rem 0.5rem;
+  outline: 2px solid transparent;
+  border: 0;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.textarea:focus {
+  outline: 2px solid var(--color-focus);
+}
+
+.edit-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  padding: 0.25rem;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  border: 0;
+  color: var(--color-white);
+  outline: 2px solid transparent;
+}
+
+.edit-button:focus {
+  outline: 2px solid var(--color-focus);
+}
+
+.message {
+  padding: 1rem 0.5rem;
+  font-size: var(--font-100);
+  line-height: 125%;
+}
