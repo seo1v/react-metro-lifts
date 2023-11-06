@@ -1,0 +1,30 @@
+.main {
+  width: 25%;
+  margin-right: 15%;
+}
+
+@media (max-width: 1280px) {
+  .main {
+    width: 30%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 80%;
+  }
+}
