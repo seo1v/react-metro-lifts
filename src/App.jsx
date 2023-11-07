@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
+import { Reset } from 'styled-reset';
 import Layout from './components/Layout';
 import NotFound from './routes/NotFound';
 import Home from './routes/Home';
@@ -64,13 +64,13 @@ function App() {
 
   return (
     <>
+      <Reset />
       {isLoading ? (
         <Modal message='로딩 중...' />
       ) : (
         <>
           <QueryClientProvider client={queryClient}>
             <RouterProvider router={router} />
-            <ReactQueryDevtools initialIsOpen={true} />
           </QueryClientProvider>
         </>
       )}
