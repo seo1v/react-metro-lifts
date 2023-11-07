@@ -1,0 +1,181 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url('../../public/images/main.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--color-silver);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
+}
+
+.avatar {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  display: block;
+  padding: 0.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* editor */
+.editor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.editor input[type='text'] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  outline: 2px solid transparent;
+  font-size: var(--font-50);
+}
+
+.editor input[type='text']::placeholder {
+  color: var(--color-gray);
+}
+
+.editor input[type='text']:focus {
+  outline: 2px solid var(--color-focus);
+}
+
+.edit-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0.25rem;
+  padding: 0.25rem;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  border: 2px solid transparent;
+  color: var(--color-white);
+}
+
+.edit-button:focus {
+  border: 2px solid var(--color-focus);
+}
+
+/* user */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.username {
+  font-size: var(--font-200);
+  font-weight: var(--weight-700);
+}
+
+.email {
+  color: var(--color-gray);
+  font-size: var(--font-50);
+  font-weight: var(--weight-400);
+}
+
+/* buttons */
+.show-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: 2px solid transparent;
+  font-size: var(--font-200);
+}
+
+.show-button:focus {
+  border: 2px solid var(--color-focus);
+}
+
+.menu {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  /* transform: translateY(100%); */
+  border-radius: 0.25rem;
+  background-color: var(--color-white);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  z-index: 2;
+}
+
+.menu .button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  background-color: transparent;
+  font-family: var(--font-basic);
+  font-size: var(--font-50);
+}
+
+.menu .button:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu .button:focus {
+  outline: 2px solid var(--color-focus);
+}
+
+.menu .button:hover {
+  color: var(--color-gray);
+}
+
+input[type='file'] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+input[type='file']:focus + label {
+  outline: 2px solid var(--color-focus);
+}
+
+@media (max-width: 480px) {
+  .username {
+    font-size: var(--font-100);
+  }
+}
