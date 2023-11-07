@@ -9,7 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: var(--color-blue);
+  background-color: var(--color-sky);
 }
 
 .section {
@@ -18,10 +18,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0;
 }
 
-header {
-  padding-top: 3rem;
+/* header */
+.header {
+  padding-top: 2rem;
 }
 
 .text {
@@ -50,6 +52,14 @@ header {
   font-weight: var(--weight-500);
 }
 
+/* main */
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .legend {
   position: absolute;
   width: 1px;
@@ -69,21 +79,6 @@ header {
 .form label {
   font-size: var(--font-100);
   margin-bottom: 0.25rem;
-}
-
-.form input[type='submit'] {
-  cursor: pointer;
-  background-color: var(--color-blue);
-  margin-top: 2rem;
-  padding: 1rem 0.5rem;
-  border-radius: 0.5rem;
-  color: var(--color-white);
-  font-size: var(--font-200);
-  font-weight: var(--weight-500);
-}
-
-.form input[type='submit']:hover {
-  filter: brightness(105%);
 }
 
 .contents {
@@ -108,13 +103,18 @@ header {
 
 .content input {
   width: 100%;
-  padding: 0.65rem 0.25rem;
+  padding: 0.5rem 0.25rem;
   background-color: var(--color-silver);
+  border-bottom: 2px solid var(--color-silver);
 }
 
 .content input::placeholder {
   color: var(--color-gray);
   font-size: var(--font-50);
+}
+
+.content input:focus {
+  border-bottom: 2px solid var(--color-focus);
 }
 
 .error {
@@ -130,6 +130,27 @@ header {
   content: '⚠ ';
 }
 
+.form input[type='submit'] {
+  cursor: pointer;
+  background-color: var(--color-blue);
+  margin-top: 2rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-white);
+  font-size: var(--font-200);
+  font-weight: var(--weight-500);
+  border: 2px solid transparent;
+}
+
+.form input[type='submit']:hover {
+  filter: brightness(105%);
+}
+
+.form input[type='submit']:focus {
+  border: 2px solid var(--color-focus);
+}
+
+/* footer */
 .switcher {
   color: var(--color-gray);
   font-size: var(--font-100);
@@ -144,6 +165,10 @@ header {
 
 .switcher a:hover {
   filter: brightness(105%);
+}
+
+.switcher a:focus {
+  outline: 2px solid var(--color-focus);
 }
 
 @media (max-width: 992px) {
