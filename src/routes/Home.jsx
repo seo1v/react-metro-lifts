@@ -20,7 +20,7 @@ export default function Home() {
   } = useQuery(['locations'], getLocations, {
     staleTime: 1000 * 60 * 10,
   });
-  const [text, setText] = useState('서울역');
+  const [text, setText] = useState('');
   const [filteredStations, setFilteredStations] = useState([]);
   const { showButton, onScrollToTop } = useScrollToTop();
 
@@ -43,7 +43,7 @@ export default function Home() {
       <Header>
         <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
           <label className={styles.label} htmlFor='main'>
-            *역명을 입력하세요. 기본 위치: 서울역
+            *역명을 입력하세요.
           </label>
           <div className={styles['form-content']}>
             <input
