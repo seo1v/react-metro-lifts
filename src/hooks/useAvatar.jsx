@@ -32,7 +32,6 @@ export default function useAvatar(userId) {
     async (file) => {
       if (!user) return;
 
-      console.log('update avatar...');
       const storageRef = ref(storage, `avatars/${userId}`);
       const result = await uploadBytes(storageRef, file);
       const avatarURL = await getDownloadURL(result.ref);
