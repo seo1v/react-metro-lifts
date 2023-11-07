@@ -42,9 +42,6 @@ export default function Home() {
       <Aside />
       <Header>
         <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-          <label className={styles.label} htmlFor='main'>
-            *역명을 입력하세요.
-          </label>
           <div className={styles['form-content']}>
             <input
               id='main'
