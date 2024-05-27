@@ -4,8 +4,8 @@ import { auth } from '../api/firebase';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { useForm } from 'react-hook-form';
 import { BiSolidUser, BiSolidEnvelope, BiSolidLockAlt } from 'react-icons/bi';
-import Modal from '../components/ui/Modal';
-import Logo from '../components/ui/Logo';
+import Modal from '../components/ui/Modal.jsx';
+import Logo from '../components/ui/Logo.jsx';
 import styles from './SignUp.module.css';
 
 export default function SignUp() {
