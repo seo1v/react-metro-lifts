@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../api/firebase';
-import Logo from '../components/ui/Logo';
+import Logo from '../components/ui/Logo.jsx';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
