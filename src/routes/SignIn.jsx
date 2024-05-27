@@ -4,8 +4,8 @@ import { auth } from '../api/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useForm } from 'react-hook-form';
 import { BiSolidEnvelope, BiSolidLockAlt } from 'react-icons/bi';
-import Modal from '../components/ui/Modal';
-import Logo from '../components/ui/Logo';
+import Modal from '../components/ui/Modal.jsx';
+import Logo from '../components/ui/Logo.jsx';
 import styles from './SignIn.module.css';
 
 export default function SignIn() {
