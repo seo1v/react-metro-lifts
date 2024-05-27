@@ -15,8 +15,8 @@ import Message from '../components/Message';
 import Wrapper from '../components/Wrapper';
 import Header from '../components/Header';
 import Main from '../components/Main';
-import Aside from '../components/ui/Aside';
-import Modal from '../components/ui/Modal';
+import Aside from '../components/ui/Aside.jsx';
+import Modal from '../components/ui/Modal.jsx';
 import {
   BiDotsHorizontalRounded,
   BiSolidUserCircle,
